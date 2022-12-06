@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s ease;
+  font-family: bignoodletitling;
+}
+
+
+div.img-area {
+  height: 300px;
+  width: 100%;
+  background: url("wemadeit.gif");
+  background-position: center;
+  background-size: cover;
+}
