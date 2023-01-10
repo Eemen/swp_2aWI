@@ -1,0 +1,24 @@
+.header{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+  width: 800px;
+}
+
+.bild{
+  background-color: grey;
+  height: 650px;
+  width: 70%;
+  margin-left: 220px;
+}
+
+.punkte{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.mobile{
+  margin-top: 100px;
+  text-align: center;
+}
