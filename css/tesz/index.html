@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Toggle Visibility</title>
+	<style>
+		.color-div {
+			height: 100px;
+			width: 100px;
+			display: none;
+		}
+
+		.color-div.visible {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="color-div visible" style="background-color: red;"></div>
+		<div class="color-div" style="background-color: blue;"></div>
+		<div class="color-div" style="background-color: green;"></div>
+		<div class="color-div" style="background-color: yellow;"></div>
+	</div>
+	<button onclick="toggleVisibility()">Toggle visibility</button>
+
+	<script>
+		function toggleVisibility() {
+			const divs = document.getElementsByClassName("color-div");
+			for (let i = 0; i < divs.length; i++) {
+				if (divs[i].classList.contains("visible")) {
+					divs[i].classList.remove("visible");
+					if (i + 1 < divs.length) {
+						divs[i + 1].classList.add("visible");
+						break;
+					} else {
+						divs[0].classList.add("visible");
+						break;
+					}
+				}
+			}
+		}
+	</script>
+</body>
+</html>
