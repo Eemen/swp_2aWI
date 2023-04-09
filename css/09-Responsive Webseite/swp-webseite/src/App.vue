@@ -1,5 +1,5 @@
 <script setup>
-  import CardSchnitzel from "./components/CardSchnitzel.vue";
+  import CardRezepte from "./components/CardRezepte.vue";
 import FooterBottom from "./components/FooterBottom.vue";
   import SideBar from "./components/SideBar.vue"
   import TagesMenue from "./components/TageMenue.vue";
@@ -10,7 +10,7 @@ import FooterBottom from "./components/FooterBottom.vue";
   <v-app class="app">
     <SideBar />
     <v-main>
-    <CardSchnitzel />
+    <CardRezepte />
     <TagesMenue />
     <FooterBottom />
     </v-main>
